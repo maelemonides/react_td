@@ -15,6 +15,7 @@ export const range = (end) => {
   return result;
 };
 
+// Pour trier les jours à partir du premier jour du mois
 export const sortDays = (date) => {
   const dayIndex = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
   const sortedDays = [...DAYS.slice(dayIndex), ...DAYS.slice(0, dayIndex)];
